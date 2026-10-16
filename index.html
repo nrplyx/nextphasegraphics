@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next Phase Graphics</title>
+<meta name="description" content="Next Phase Graphics is a layered image editor for Windows that opens layered PSD files, develops camera RAW and draws vector shapes in 16-bit color. One portable exe, nothing to install.">
+<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+<link rel="icon" type="image/png" href="assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+<script src="download.js"></script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">
+    <img src="assets/icon.svg" alt="" width="30" height="30">
+    <span>Next Phase <b>Graphics</b></span>
+  </a>
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#raw">RAW</a>
+    <a href="#tour">Tour</a>
+    <a href="#formats">Formats</a>
+    <a class="nav-cta" href="#download">Download</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ───────────── Hero ───────────── -->
+<section class="hero">
+  <div class="aurora" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
+
+  <div class="hero-copy">
+    <p class="eyebrow">Windows image editor · v<span data-version>1.0.0</span></p>
+    <h1>Layers. RAW. Vectors.<br><span class="grad">One small, fast editor.</span></h1>
+    <p class="lead">Next Phase Graphics opens layered PSD files with every layer intact, develops camera RAW, draws vector shapes
+      and keeps 16 bits per channel from the first stroke to the export. There's no installer; unzip it and start editing.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" data-download href="https://github.com/nrplyx/nextphasegraphics/releases/download/v1.0.0/NextPhaseGraphics-1.0.0-win-x64.zip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+        Download for Windows
+      </a>
+      <a class="btn btn-ghost" href="#tour">Take the tour</a>
+    </div>
+    <p class="fine"><span data-size>84 MB</span> zip · Windows 10 / 11 x64 · no installer, no .NET runtime needed</p>
+  </div>
+
+  <div class="plates" aria-hidden="true">
+    <div class="plate p1"></div>
+    <div class="plate p2"></div>
+    <div class="plate p3"><svg viewBox="36 36 58 58"><path d="M50 82 V48 H58 L74 70 V48 H82 V82 H74 L58 60 V82 Z" fill="#fff"/></svg></div>
+  </div>
+</section>
+
+<!-- ───────────── Showcase window ───────────── -->
+<section class="showcase">
+  <figure class="window tilt">
+    <img src="assets/shots/editor.png" alt="Next Phase Graphics editing a synthwave poster: chrome title text with layer effects, a vector sun, a neon grid, and curves and color balance adjustment layers" width="1586" height="993">
+  </figure>
+  <ul class="stats">
+    <li><b>26</b><span>blend modes</span></li>
+    <li><b>16-bit</b><span>per channel, everywhere</span></li>
+    <li><b>10</b><span>layer style effects</span></li>
+    <li><b>1</b><span>portable exe</span></li>
+  </ul>
+</section>
+
+<!-- ───────────── Features ───────────── -->
+<section id="features" class="section">
+  <p class="eyebrow center">What's inside</p>
+  <h2 class="center">The tools you reach for daily, and little else</h2>
+  <p class="sub center">Compositing, retouching, RAW development and web graphics cover most real editing work, so that's where the effort went.</p>
+
+  <div class="grid">
+    <article class="card" style="--c:var(--amber)">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Z"/><path d="m3 13 9 5 9-5"/></svg></div>
+      <h3>Layers that behave</h3>
+      <p>Opacity, 26 blend modes, nested groups, layer masks, clipping masks, merge and flatten. Drag to reorder, Ctrl+click to select pixels.</p>
+    </article>
+    <article class="card" style="--c:var(--magenta)">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20c4-1 6-6 8-10s4-6 8-6"/><circle cx="4" cy="20" r="1.5"/><circle cx="20" cy="4" r="1.5"/></svg></div>
+      <h3>Non-destructive adjustments</h3>
+      <p>Curves, Levels, Hue/Saturation with six color ranges, and Color Balance as adjustment layers. You can mask, hide or change them later, and the pixels underneath stay untouched.</p>
+    </article>
+    <article class="card" style="--c:var(--teal)">
+      <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 4v16M4 12h16"/></svg></div>
+      <h3>RAW photo layers</h3>
+      <p>Develop raw files from most digital cameras: white balance, tone, curves, HSL, local contrast, haze removal, masks and lens corrections. The result stays a RAW layer you can re-develop at any time.</p>
+    </article>
+    <article class="card" style="--c:var(--amber)">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="5" width="11" height="11" rx="2"/><path d="M9 20h9a2 2 0 0 0 2-2V9"/></svg></div>
+      <h3>Layer styles</h3>
+      <p>Drop Shadow, Bevel &amp; Emboss, Stroke, Inner and Outer Glow, Satin, Overlays and blend ranges. They stay editable, and PSD files bring them in with each layer.</p>
+    </article>
+    <article class="card" style="--c:var(--magenta)">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 18 12 4l8 14"/><circle cx="12" cy="4" r="1.6"/><circle cx="4" cy="18" r="1.6"/><circle cx="20" cy="18" r="1.6"/></svg></div>
+      <h3>Vector shapes &amp; Pen</h3>
+      <p>Shape layers, a full Pen tool, path selection, boolean path operations, vector masks and Free Transform on curves. Shapes stay sharp at any resize.</p>
+    </article>
+    <article class="card" style="--c:var(--teal)">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 5h14M12 5v14M9 19h6"/></svg></div>
+      <h3>Editable text</h3>
+      <p>Text layers with any installed font, size, weight, alignment, tracking and line spacing. Double-click a text layer to edit it again.</p>
+    </article>
+    <article class="card" style="--c:var(--amber)">
+      <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h2v4H7zM11 10h2v4h-2zM15 10h2v4h-2z"/></svg></div>
+      <h3>GPU accelerated</h3>
+      <p>The graphics card draws the screen and the RAW previews, so big documents stay responsive. The CPU renders every export, and the file comes out identical with or without a graphics card.</p>
+    </article>
+    <article class="card" style="--c:var(--magenta)">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg></div>
+      <h3>History that's cheap</h3>
+      <p>Undo stores only what changed, so a brush stroke costs kilobytes instead of a full image copy, and the History panel jumps back to any earlier step.</p>
+    </article>
+    <article class="card" style="--c:var(--teal)">
+      <div class="ico"><svg viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div>
+      <h3>Open, documented format</h3>
+      <p>A <code>.psm</code> project keeps every layer, mask, style and RAW setting. It's a plain ZIP of JSON and 16-bit PNGs; rename it to .zip and you can pull out any layer by hand.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ───────────── RAW ───────────── -->
+<section id="raw" class="section raw">
+  <div class="raw-head">
+    <div>
+      <p class="eyebrow">RAW developer</p>
+      <h2>Develop the photo without leaving the document</h2>
+      <p class="sub">Open a raw file and a full developer comes up. Confirm it, and the photo lands in your document as a RAW layer that keeps the original file and every setting, so a double-click takes you back to the sliders.</p>
+    </div>
+    <figure class="window raw-shot">
+      <img src="assets/shots/raw-editor.png" alt="The RAW editor with the basic panel open: profile, white balance and tone sliders next to a night skyline" loading="lazy" width="1366" height="873">
+    </figure>
+  </div>
+
+  <div class="spec">
+    <article class="wide" style="--c:var(--magenta)">
+      <h3>Local masks you place yourself</h3>
+      <p>Drag a linear gradient's start and end to any position and angle on the frame, or set a radial gradient's centre, both radii and its rotation, then soften the edge with feather. Gradients and brush strokes combine with add, subtract and intersect; each mask can be inverted, faded with density and given its own exposure, contrast, highlights, shadows, whites, blacks, temperature, tint, saturation, texture, local contrast, haze removal and sharpness.</p>
+    </article>
+    <article style="--c:var(--amber)">
+      <h3>Tone</h3>
+      <p>Exposure, contrast, highlights, shadows, whites and blacks, plus a parametric curve with movable split points and point curves for RGB and each channel.</p>
+    </article>
+    <article style="--c:var(--teal)">
+      <h3>White balance &amp; colour</h3>
+      <p>As shot, auto, temperature and tint, or a neutral picker. Vibrance, saturation and a hue, saturation and luminance mixer over eight colour bands.</p>
+    </article>
+    <article style="--c:var(--magenta)">
+      <h3>Looks &amp; profiles</h3>
+      <p>Seven built-in looks from Color to Monochrome work with any camera. You can import your own camera colour profiles, and creative looks get a strength slider from 0 to 200 %.</p>
+    </article>
+    <article style="--c:var(--amber)">
+      <h3>Detail</h3>
+      <p>Sharpening with amount, radius, detail and edge masking. Luminance and colour noise reduction are separate, and the colour side measures the noise at every scale, so blotches go without smearing texture.</p>
+    </article>
+    <article style="--c:var(--teal)">
+      <h3>Optics</h3>
+      <p>Automatic colour-fringe alignment, manual distortion and vignetting with a midpoint, purple and green defringe with their own hue ranges, and clipped highlights rebuilt from the surrounding glow.</p>
+    </article>
+    <article style="--c:var(--magenta)">
+      <h3>Crop &amp; geometry</h3>
+      <p>Crop with aspect presets, straighten, quarter turns and flips. None of it touches the raw data.</p>
+    </article>
+    <article style="--c:var(--amber)">
+      <h3>Many files at once</h3>
+      <p>Open a batch and a filmstrip appears. Every slider you move applies to all selected frames, each keeping its own other settings, and Sync Settings copies the whole look across.</p>
+    </article>
+    <article style="--c:var(--teal)">
+      <h3>Output colour</h3>
+      <p>The pipeline runs in floating point in a wide-gamut space and hands over 16 bits per channel in sRGB, Display P3, Rec. 2020, ProPhoto or your own ICC profile.</p>
+    </article>
+    <article class="wide" style="--c:var(--magenta)">
+      <h3>Stays a raw file</h3>
+      <p>The RAW layer embeds the original file or links to it; a linked file that moved together with the project is found again, and relinking checks the file's fingerprint before it accepts a replacement. Masks stay shapes and strokes too, so they're redrawn at full resolution on every render.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ───────────── Tour ───────────── -->
+<section id="tour" class="section tour">
+  <p class="eyebrow center">Tour</p>
+  <h2 class="center">See it in action</h2>
+
+  <div class="tabs" role="tablist">
+    <button role="tab" aria-selected="true" data-tab="0">Compositing</button>
+    <button role="tab" aria-selected="false" data-tab="1">Layer styles</button>
+    <button role="tab" aria-selected="false" data-tab="2">RAW editor</button>
+    <button role="tab" aria-selected="false" data-tab="3">Welcome</button>
+  </div>
+
+  <div class="stage">
+    <figure class="window slide active" data-slide="0">
+      <img src="assets/shots/editor.png" alt="A synthwave poster built from groups, masked raster layers, a vector sun, editable text and adjustment layers" loading="lazy" width="1586" height="993">
+      <figcaption><b>Real compositing.</b> This poster stacks groups, a masked nebula, a vector sun with boolean cut-outs, a grid in Screen mode, editable text, and Curves and Color Balance on top. You can still change any part of it.</figcaption>
+    </figure>
+    <figure class="window slide" data-slide="1">
+      <img src="assets/shots/layer-styles.png" alt="A neon sign on a brick wall: pink NEON letters, a cyan triangle and amber DISTRICT lettering, all text and shape layers with glow effects" loading="lazy" width="1586" height="993">
+      <figcaption><b>Effects stay live.</b> Every neon tube here is a text or shape layer with Color Overlay, Inner Glow, Outer Glow and a Drop Shadow on the wall, while Bevel &amp; Emboss gives the bricks their depth. Retype a word and the glow follows it.</figcaption>
+    </figure>
+    <figure class="window slide" data-slide="2">
+      <img src="assets/shots/raw-editor.png" alt="The RAW editor developing a night skyline photograph" loading="lazy" width="1366" height="873">
+      <figcaption><b>A RAW developer built in.</b> It reads camera color profiles, rebuilds clipped highlights, corrects lens distortion and supports local masks, and the result stays editable as a RAW layer.</figcaption>
+    </figure>
+    <figure class="window slide" data-slide="3">
+      <img src="assets/shots/welcome.png" alt="The welcome screen with the Next Phase Graphics logo, New Document and Open buttons" loading="lazy" width="1586" height="993">
+      <figcaption><b>A calm, neutral workspace.</b> Nothing in the gray interface competes with your image for attention. Drop a file anywhere on the window to open it.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ───────────── Formats ───────────── -->
+<section id="formats" class="section">
+  <p class="eyebrow center">Formats</p>
+  <h2 class="center">Opens what you already have</h2>
+  <div class="formats">
+    <div class="fcol">
+      <h3>Open &amp; import</h3>
+      <ul class="chips">
+        <li class="hot">PSD</li><li class="hot">PSB</li><li>PNG 8/16</li><li>JPEG</li><li>WebP</li><li>TIFF</li><li>BMP</li><li>GIF</li><li>TGA</li>
+        <li class="hot">SVG</li><li>PDF</li><li>AI</li><li>EPS</li>
+        <li class="hot">ARW</li><li>DNG</li><li>CR2</li><li>NEF</li><li>+ most RAW</li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h3>Save &amp; export</h3>
+      <ul class="chips">
+        <li class="hot">.psm project</li><li>PNG 16-bit</li><li>JPEG</li><li>WebP lossless</li><li>SVG</li><li>PDF</li>
+      </ul>
+      <p class="note">Also: copy and paste with other apps, drag &amp; drop onto the window or the exe, and a New Document preset sized to the image on the clipboard.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ───────────── Download ───────────── -->
+<section id="download" class="section download">
+  <div class="dl-card">
+    <img class="dl-logo" src="assets/logo-dark.svg" alt="Next Phase Graphics" width="220">
+    <div class="dl-body">
+      <h2>Take it anywhere</h2>
+      <p>The whole program is one self-contained executable, so you can copy the folder to another PC or a USB stick and run it there without installing anything.</p>
+      <ol class="steps">
+        <li><span>1</span>Download the zip</li>
+        <li><span>2</span>Unpack it anywhere</li>
+        <li><span>3</span>Run <code>NextPhaseGraphics.exe</code></li>
+      </ol>
+      <p class="fine">The zip also holds the two example projects from the tour; open one and pick apart every layer and effect.</p>
+      <a class="btn btn-primary big" data-download href="https://github.com/nrplyx/nextphasegraphics/releases/download/v1.0.0/NextPhaseGraphics-1.0.0-win-x64.zip">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+        <span>Download v<span data-version>1.0.0</span></span>
+      </a>
+      <p class="fine"><span data-file>NextPhaseGraphics-1.0.0-win-x64.zip</span> · <span data-size>84 MB</span> · built <span data-built>2026-10-16</span></p>
+      <details class="req">
+        <summary>System requirements &amp; first start</summary>
+        <ul>
+          <li>Windows 10 or 11, 64-bit.</li>
+          <li>Optional: a Direct3D 11 graphics card with 1 GB or more of video memory for GPU rendering. Without one, the CPU does the work.</li>
+          <li>The exe isn't code-signed, so SmartScreen may warn you on the first start. Click <i>More info → Run anyway</i>.</li>
+          <li>Settings live in <code>%AppData%\NextPhaseGraphics</code>. To uninstall, delete the program folder and that one.</li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <img src="assets/icon.svg" alt="" width="22" height="22">
+  <span>© 2026 Next Phase Graphics</span>
+  <span class="sep">·</span>
+  <span>Uses SkiaSharp, LibRaw and Vortice. See THIRD_PARTY_NOTICES.md in the download.</span>
+</footer>
+
+<div class="lightbox" hidden><img alt=""></div>
+
+<script src="site.js?v=2"></script>
+</body>
+</html>
