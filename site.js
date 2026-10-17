@@ -39,6 +39,22 @@
     reveal.observe(el);
   });
 
+  // showcase video: the poster (a before/after frame) shows while it loads, then it plays by itself, muted and looping;
+  // it pauses while scrolled out of view, and people who ask for reduced motion get controls instead of autoplay
+  const video = document.querySelector(".showcase-video video");
+  if (video) {
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let inView = true;
+    const tryPlay = () => { if (!reduce && inView) video.play().catch(() => {}); };
+    if (reduce) { video.removeAttribute("autoplay"); video.controls = true; video.pause(); }
+    else {
+      video.muted = true;   // required for autoplay in every browser
+      if (video.readyState >= 3) tryPlay();
+      video.addEventListener("canplay", tryPlay);
+      new IntersectionObserver(([en]) => { inView = en.isIntersecting; inView ? tryPlay() : video.pause(); }, { threshold: 0.2 }).observe(video);
+    }
+  }
+
   // feature cards: glow follows the pointer
   document.querySelectorAll(".card").forEach(c => c.addEventListener("pointermove", e => {
     const r = c.getBoundingClientRect();
